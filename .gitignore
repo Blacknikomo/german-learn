@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+
+.DS_Store
+
+# machine-local Claude config (vault paths live here)
+CLAUDE.local.md
+.claude/settings.local.json
+
+# plans/ADRs never belong here; if one lands by accident, keep it out of git
+PLAN-*.md
