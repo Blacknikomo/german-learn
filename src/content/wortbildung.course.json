@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "id": "wortbildung",
+  "title": {
+    "de": "Wortbildung",
+    "en": "Word formation",
+    "ru": "Словообразование"
+  },
+  "locales": [
+    "de",
+    "en",
+    "ru"
+  ],
+  "defaultLocale": "de",
+  "requiredLocales": [
+    "de",
+    "ru"
+  ],
+  "targetLanguage": "de",
+  "topics": [
+    {
+      "id": "wortbildung",
+      "title": {
+        "de": "Wortbildung",
+        "en": "Word formation",
+        "ru": "Словообразование"
+      },
+      "order": 0
+    },
+    {
+      "id": "trennbare-verben",
+      "title": {
+        "de": "Trennbare und untrennbare Verben",
+        "en": "Separable and inseparable verbs",
+        "ru": "Отделяемые и неотделяемые приставки"
+      },
+      "parent": "wortbildung",
+      "order": 1,
+      "estimatedMinutes": 20
+    },
+    {
+      "id": "komposita",
+      "title": {
+        "de": "Komposita",
+        "en": "Compounds",
+        "ru": "Композиты"
+      },
+      "parent": "wortbildung",
+      "order": 2,
+      "estimatedMinutes": 20
+    }
+  ],
+  "items": [
+    {
+      "id": "praefixe-theorie",
+      "version": 1,
+      "type": "note",
+      "topic": "trennbare-verben",
+      "order": 1,
+      "payload": {
+        "title": {
+          "de": "Ein Stamm, viele Verben",
+          "en": "One stem, many verbs",
+          "ru": "Одна основа, много глаголов"
+        },
+        "body": {
+          "de": "Ein Präfix verändert die Bedeutung eines Verbstamms vollständig. Wer *geben* kennt, kennt damit noch nicht **aufgeben**, **angeben** oder **übergeben** — aber er muss sie auch nicht einzeln lernen, wenn er das Präfix kennt.\n\n- **Trennbare** Präfixe sind betont und wandern im Hauptsatz ans Ende: *Er gibt das Rauchen **auf**.*\n- **Untrennbare** Präfixe (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) sind unbetont und bleiben am Verb: *Er **ver**gibt den Fehler.*\n- Die Betonung entscheidet: **ÜBER**setzen heißt hinüberbringen, über**SETZEN** heißt in eine andere Sprache bringen.",
+          "en": "A prefix changes a verb stem's meaning completely. Knowing *geben* does not yet mean knowing **aufgeben**, **angeben** or **übergeben** — but they need not be learned one by one either, once the prefix is known.\n\n- **Separable** prefixes are stressed and move to the end of a main clause: *Er gibt das Rauchen **auf**.*\n- **Inseparable** prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) are unstressed and stay put: *Er **ver**gibt den Fehler.*\n- Stress decides: **ÜBER**setzen means to ferry across, über**SETZEN** means to translate.",
+          "ru": "Приставка меняет значение основы полностью. Знать *geben* — ещё не знать **aufgeben**, **angeben** или **übergeben**, но и учить их по одному не нужно, если знаешь приставку.\n\n- **Отделяемые** приставки под ударением и уходят в конец главного предложения: *Er gibt das Rauchen **auf**.*\n- **Неотделяемые** (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) без ударения и остаются при глаголе: *Er **ver**gibt den Fehler.*\n- Решает ударение: **ÜBER**setzen — переправить, über**SETZEN** — перевести на другой язык."
+        }
+      }
+    },
+    {
+      "id": "aufgeben-bedeutung",
+      "version": 1,
+      "type": "choice",
+      "topic": "trennbare-verben",
+      "order": 2,
+      "payload": {
+        "prompt": {
+          "de": "»Er hat das Rauchen aufgegeben.« Was bedeutet *aufgeben* hier?",
+          "en": "“Er hat das Rauchen aufgegeben.” What does *aufgeben* mean here?",
+          "ru": "«Er hat das Rauchen aufgegeben.» Что здесь значит *aufgeben*?"
+        },
+        "options": [
+          {
+            "term": "aufhören mit etwas"
+          },
+          {
+            "term": "etwas nach oben geben"
+          },
+          {
+            "term": "etwas verraten"
+          },
+          {
+            "term": "etwas abschicken"
+          }
+        ],
+        "answer": 0,
+        "explain": {
+          "de": "*auf-* trägt hier die Bedeutung »beenden«. Dasselbe Präfix heißt in *einen Brief aufgeben* dagegen »zur Post bringen« — ein Präfix hat mehrere Lesarten, die der Kontext auswählt.",
+          "en": "Here *auf-* carries the sense “stop”. The same prefix in *einen Brief aufgeben* means “post” — one prefix has several readings and the context picks one.",
+          "ru": "Здесь *auf-* несёт значение «прекратить». Та же приставка в *einen Brief aufgeben* значит «отправить по почте» — у приставки несколько чтений, контекст выбирает одно."
+        }
+      },
+      "tags": [
+        "praefixe"
+      ]
+    },
+    {
+      "id": "uebersetzen-betonung",
+      "version": 1,
+      "type": "choice",
+      "topic": "trennbare-verben",
+      "order": 3,
+      "payload": {
+        "prompt": {
+          "de": "»Der Fährmann setzte uns über.« Welche Betonung hat dieses *übersetzen*?",
+          "en": "“Der Fährmann setzte uns über.” Which stress does this *übersetzen* have?",
+          "ru": "«Der Fährmann setzte uns über.» Какое ударение у этого *übersetzen*?"
+        },
+        "options": [
+          {
+            "term": "ÜBERsetzen (trennbar)"
+          },
+          {
+            "term": "überSETZEN (untrennbar)"
+          }
+        ],
+        "answer": 0,
+        "explain": {
+          "de": "Das Präfix ist getrennt und steht am Satzende, also ist es betont: **ÜBER**setzen, hinüberbringen. Beim untrennbaren über**SETZEN** bliebe es am Verb: *Er übersetzte den Text.*",
+          "en": "The prefix has separated and stands at the end, so it is stressed: **ÜBER**setzen, to ferry across. The inseparable über**SETZEN** would stay put: *Er übersetzte den Text.*",
+          "ru": "Приставка отделилась и стоит в конце — значит, она под ударением: **ÜBER**setzen, переправить. У неотделяемого über**SETZEN** она осталась бы при глаголе: *Er übersetzte den Text.*"
+        }
+      },
+      "tags": [
+        "praefixe",
+        "betonung"
+      ]
+    },
+    {
+      "id": "untrennbar-erkennen",
+      "version": 1,
+      "type": "choice",
+      "topic": "trennbare-verben",
+      "order": 4,
+      "payload": {
+        "prompt": {
+          "de": "Welches Verb hat ein *untrennbares* Präfix?",
+          "en": "Which verb has an *inseparable* prefix?",
+          "ru": "У какого глагола приставка *неотделяемая*?"
+        },
+        "options": [
+          {
+            "term": "verstehen"
+          },
+          {
+            "term": "anfangen"
+          },
+          {
+            "term": "mitkommen"
+          },
+          {
+            "term": "zuhören"
+          }
+        ],
+        "answer": 0,
+        "explain": {
+          "de": "*ver-* gehört zu den immer untrennbaren Präfixen: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-. Die anderen drei sind betont und trennbar: *er fängt an*, *sie kommt mit*, *ich höre zu*.",
+          "en": "*ver-* is one of the always-inseparable prefixes: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-. The other three are stressed and separable.",
+          "ru": "*ver-* — из всегда неотделяемых: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-. Остальные три под ударением и отделяются."
+        }
+      },
+      "tags": [
+        "praefixe"
+      ]
+    },
+    {
+      "id": "aufgeben-satzende",
+      "version": 1,
+      "type": "cloze",
+      "topic": "trennbare-verben",
+      "order": 5,
+      "payload": {
+        "prompt": {
+          "de": "Setze das Präfix ein: »Er gibt das Rauchen ___.«",
+          "en": "Fill in the prefix: “Er gibt das Rauchen ___.”",
+          "ru": "Вставьте приставку: «Er gibt das Rauchen ___.»"
+        },
+        "accept": [
+          "auf"
+        ],
+        "before": {
+          "term": "Er gibt das Rauchen "
+        },
+        "after": {
+          "term": "."
+        },
+        "explain": {
+          "de": "Im Hauptsatz wandert das trennbare Präfix ans Ende.",
+          "en": "In a main clause the separable prefix moves to the end.",
+          "ru": "В главном предложении отделяемая приставка уходит в конец."
+        }
+      },
+      "tags": [
+        "praefixe"
+      ]
+    },
+    {
+      "id": "anmelden-satzende",
+      "version": 1,
+      "type": "cloze",
+      "topic": "trennbare-verben",
+      "order": 6,
+      "payload": {
+        "prompt": {
+          "de": "Setze das Präfix ein: »Ich melde mich für den Kurs ___.«",
+          "en": "Fill in the prefix: “Ich melde mich für den Kurs ___.”",
+          "ru": "Вставьте приставку: «Ich melde mich für den Kurs ___.»"
+        },
+        "accept": [
+          "an"
+        ],
+        "before": {
+          "term": "Ich melde mich für den Kurs "
+        },
+        "after": {
+          "term": "."
+        }
+      },
+      "tags": [
+        "praefixe"
+      ]
+    },
+    {
+      "id": "komposita-theorie",
+      "version": 1,
+      "type": "note",
+      "topic": "komposita",
+      "order": 1,
+      "payload": {
+        "title": {
+          "de": "Das letzte Wort regiert",
+          "en": "The last word rules",
+          "ru": "Последнее слово главное"
+        },
+        "body": {
+          "de": "Ein deutsches Kompositum ist rechtsköpfig: das **letzte** Glied bestimmt Wortart, Genus und Grundbedeutung, alles davor schränkt nur ein.\n\n- *der Krankenversicherungsbeitrag* ist ein **Beitrag** — deshalb *der*, obwohl *die Versicherung* darin steckt.\n- Zerlegen von rechts nach links ist die schnellste Lesehilfe: Beitrag ← Versicherung ← Kranken.\n- Manche Glieder werden mit einem **Fugenelement** verbunden: *Arbeit + Markt → Arbeit**s**markt*, *Geburt + Tag → Geburt**s**tag*.\n- Nicht jedes Kompositum ist wörtlich zu nehmen: ein *Handschuh* ist kein Schuh.",
+          "en": "A German compound is right-headed: the **last** element decides part of speech, gender and core meaning; everything before it merely narrows.\n\n- *der Krankenversicherungsbeitrag* is a **Beitrag** — hence *der*, even though *die Versicherung* sits inside it.\n- Decomposing right to left is the fastest reading aid: Beitrag ← Versicherung ← Kranken.\n- Some elements join with a **linking letter**: *Arbeit + Markt → Arbeit**s**markt*.\n- Not every compound is literal: a *Handschuh* is not a shoe.",
+          "ru": "Немецкий композит правоглавный: **последний** элемент задаёт часть речи, род и основное значение, всё перед ним лишь уточняет.\n\n- *der Krankenversicherungsbeitrag* — это **Beitrag**, поэтому *der*, хотя внутри *die Versicherung*.\n- Разбирать справа налево — самый быстрый приём при чтении: Beitrag ← Versicherung ← Kranken.\n- Некоторые элементы соединяются **соединительной буквой**: *Arbeit + Markt → Arbeit**s**markt*.\n- Не каждый композит буквален: *Handschuh* — не ботинок."
+        }
+      }
+    },
+    {
+      "id": "komposita-genus",
+      "version": 1,
+      "type": "choice",
+      "topic": "komposita",
+      "order": 2,
+      "payload": {
+        "prompt": {
+          "de": "Welchen Artikel hat *Krankenversicherungsbeitrag*?",
+          "en": "Which article does *Krankenversicherungsbeitrag* take?",
+          "ru": "Какой артикль у *Krankenversicherungsbeitrag*?"
+        },
+        "options": [
+          {
+            "term": "der"
+          },
+          {
+            "term": "die"
+          },
+          {
+            "term": "das"
+          }
+        ],
+        "answer": 0,
+        "explain": {
+          "de": "Das letzte Glied *Beitrag* ist maskulin, also *der* — unabhängig von *die Versicherung* im Inneren.",
+          "en": "The last element *Beitrag* is masculine, so *der* — regardless of *die Versicherung* inside.",
+          "ru": "Последний элемент *Beitrag* мужского рода, значит *der* — независимо от *die Versicherung* внутри."
+        }
+      },
+      "tags": [
+        "genus"
+      ]
+    },
+    {
+      "id": "komposita-kopf",
+      "version": 1,
+      "type": "choice",
+      "topic": "komposita",
+      "order": 3,
+      "payload": {
+        "prompt": {
+          "de": "In *Haustür* — welches Glied bestimmt die Grundbedeutung?",
+          "en": "In *Haustür*, which element carries the core meaning?",
+          "ru": "В *Haustür* какой элемент несёт основное значение?"
+        },
+        "options": [
+          {
+            "term": "Tür"
+          },
+          {
+            "term": "Haus"
+          }
+        ],
+        "answer": 0,
+        "explain": {
+          "de": "Eine Haustür ist eine Tür, kein Haus. Das Erstglied schränkt nur ein: *welche* Tür.",
+          "en": "A Haustür is a door, not a house. The first element only narrows: *which* door.",
+          "ru": "Haustür — это дверь, а не дом. Первый элемент лишь уточняет: *какая* дверь."
+        }
+      },
+      "tags": [
+        "lesen"
+      ]
+    },
+    {
+      "id": "fugen-arbeitsmarkt",
+      "version": 1,
+      "type": "cloze",
+      "topic": "komposita",
+      "order": 4,
+      "payload": {
+        "prompt": {
+          "de": "Verbinde zu einem Wort: *Arbeit* + *Markt* = ___",
+          "en": "Join into one word: *Arbeit* + *Markt* = ___",
+          "ru": "Соедините в одно слово: *Arbeit* + *Markt* = ___"
+        },
+        "accept": [
+          "Arbeitsmarkt"
+        ],
+        "explain": {
+          "de": "Fugen-s: *Arbeit**s**markt*.",
+          "en": "Linking *s*: *Arbeit**s**markt*.",
+          "ru": "Соединительная *s*: *Arbeit**s**markt*."
+        }
+      },
+      "tags": [
+        "fugen"
+      ]
+    },
+    {
+      "id": "fugen-fussball",
+      "version": 1,
+      "type": "cloze",
+      "topic": "komposita",
+      "order": 5,
+      "payload": {
+        "prompt": {
+          "de": "Verbinde zu einem Wort: *Fuß* + *Ball* = ___",
+          "en": "Join into one word: *Fuß* + *Ball* = ___",
+          "ru": "Соедините в одно слово: *Fuß* + *Ball* = ___"
+        },
+        "accept": [
+          "Fußball"
+        ],
+        "explain": {
+          "de": "Ohne Fugenelement. *Fussball* wird hier auch akzeptiert — ß und ss gelten als dieselbe Schreibung.",
+          "en": "No linking element. *Fussball* is accepted too — ß and ss count as the same spelling.",
+          "ru": "Без соединительного элемента. *Fussball* тоже принимается — ß и ss считаются одним написанием."
+        }
+      },
+      "tags": [
+        "fugen",
+        "orthografie"
+      ]
+    },
+    {
+      "id": "zerlegen-beitrag",
+      "version": 1,
+      "type": "cloze",
+      "topic": "komposita",
+      "order": 6,
+      "payload": {
+        "prompt": {
+          "de": "Welches Grundwort steckt rechts in *Mietvertragskündigung*?",
+          "en": "Which head noun sits at the right of *Mietvertragskündigung*?",
+          "ru": "Какое главное слово стоит справа в *Mietvertragskündigung*?"
+        },
+        "accept": [
+          "Kündigung"
+        ],
+        "explain": {
+          "de": "Von rechts lesen: Kündigung ← Vertrag ← Miete. Es geht um eine Kündigung.",
+          "en": "Read from the right: Kündigung ← Vertrag ← Miete. It is a termination.",
+          "ru": "Читаем справа: Kündigung ← Vertrag ← Miete. Речь о расторжении."
+        }
+      },
+      "tags": [
+        "lesen"
+      ]
+    }
+  ]
+}
